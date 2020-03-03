@@ -74,3 +74,11 @@ WHERE o."Id" = 16608
 FROM "OrderDetail"
 GROUP BY "ProductId"
 ORDER BY Total DESC -->
+
+<!-- 
+SELECT c."CategoryName",COUNT(*)AS Total 
+FROM "Product" AS p
+JOIN "Category" AS c
+ON c."Id" = p."CategoryId"
+GROUP BY p."CategoryId"
+ -->
